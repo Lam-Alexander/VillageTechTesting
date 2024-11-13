@@ -31,4 +31,4 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          file: './coverage/lcov-report/index.html'  # Adjust this path if needed
+          files: './coverage/lcov-report/lcov-report.json'  # Path to the raw lcov coverage file
