@@ -1,0 +1,258 @@
+.SOC-main {
+  display: flex;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    width: 97.5%;
+    margin-left: 22px;
+}
+
+.SOC-patient-sidebar {
+  width: 250px;
+  background-color: #f8fafc;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  left: 0;
+  top: 60px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.SOC-page {
+  width: calc(100% - 270px);
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 100%; 
+  padding-right: 10px;
+}
+
+.SOC-section-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  margin-top: 20px;
+}
+
+.SOC-section-header {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #09ace0;
+  border-bottom: 2px solid #09ace0;
+  padding-bottom: 10px;
+}
+
+.SOC-soc-table th,
+.SOC-comments-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #34495e;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+.SOC-soc-table td,
+.SOC-comments-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.SOC-required,
+.SOC-core,
+.SOC-non-core {
+  border-radius: 6px;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+}
+
+.SOC-required {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.SOC-core {
+  background-color: #fff3e0;
+  color: #f57c00;
+}
+
+.SOC-non-core {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.SOC-soc-table {
+  width: 100%;
+}
+
+.SOC-soc-table th,
+.SOC-soc-table td {
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  white-space: nowrap;
+}
+
+.SOC-soc-table tr:hover,
+.SOC-comments-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+.SOC-comments-section {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+.SOC-comments-table {
+  width: 100%;
+}
+
+.SOC-add-comment-form {
+  margin-top: 20px;
+}
+
+.SOC-add-comment-form h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.SOC-add-comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.SOC-add-event-button,
+.SOC-add-comment-button {
+  background-color: #09ace0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.SOC-add-event-button:hover,
+.SOC-add-comment-button:hover {
+  background-color: #007bbf;
+}
+
+.SOC-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.SOC-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.SOC-modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.SOC-modal-content form textarea,
+.SOC-modal-content form input,
+.SOC-modal-content form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.SOC-close-modal {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.SOC-close-modal:hover {
+  background-color: #d43535;
+}
+
+.SOC-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.SOC-add-event-button-modal,
+.SOC-add-comment-button-modal,
+.SOC-close-modal {
+  background-color: #09ace0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 48%;
+}
+
+.SOC-add-event-button:hover {
+  background-color: #007bbf;
+}
+
+.SOC-close-modal {
+  background-color: #ff4d4d;
+}
+
+.SOC-close-modal:hover {
+  background-color: #d43535;
+}
+
+.SOC-edit-button {
+  background-color: #09ace0; 
+  border: none;
+  color: white;
+  padding: 2px 10px;
+  font-size: 1rem; 
+  border-radius: 6px; 
+  cursor: pointer;
+  text-align: center;
+  display: block; 
+  margin: 0 auto; 
+}
+
+.SOC-edit-button:hover {
+  background-color: #007bbf; 
+}
+
+.SOC-error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,165 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height:fit-content;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 5px;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sidebarImg img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.sidebarName {
+  font-size: 24px;
+  color: #666;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebarInfo {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar-body {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 3px 10px;
+  margin:8px;
+}
+
+.sidebar-body dt {
+  font-weight: bold;
+  color: #666;
+  margin: 0;
+}
+
+.sidebar-body dd {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.sidebar-owner,
+.sidebarApp,
+.sidebarSOC,
+.sidebarDemeanor,
+.sidebarPreferredDoctor {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+}
+
+.sidebarDemeanor h3,
+.sidebar-owner h3,
+.sidebarApp h3,
+.sidebarSOC h3,
+.sidebarPreferredDoctor h3 {
+  font-size: 16px;
+  color: #09ace0; 
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid #09ace0;
+}
+
+.sidebarDemeanor p,
+.sidebar-owner p,
+.sidebarApp p,
+.sidebarSOC p,
+.sidebar-body p,
+.sidebarPreferredDoctor p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.event-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.soc-event-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.soc-event-name {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  grid-column: 1;
+}
+
+.soc-event-next-due {
+  font-size: 14px;
+  color: #666;
+  grid-column: 2;
+  margin-top: 0;
+  text-align: right;
+}
+
+.next-due {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.soc-event {
+  text-align: left;
+}
+
+.owner-name {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.demeanor-container p {
+  margin: 0;
+}
+
+.Sidebar h3,
+.Sidebar p {
+  margin: 0 0 5px 0;
+}
+
+.sidebarApp > div {
+  margin-bottom: 5px;
+}
+
+.sidebarApp p {
+  margin: 0 0 3px 0;
+}
+

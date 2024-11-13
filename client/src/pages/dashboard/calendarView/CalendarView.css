@@ -1,0 +1,528 @@
+.calendarView {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  font-family: 'Nunito', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f5f7fa;
+}
+
+.calendarView__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendarView__header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.calendarView__headerButtons,
+.calendarView__leftControls,
+.calendarView__rightControls {
+  display: flex;
+  gap: 10px;
+}
+
+.calendarView__headerButtons .clock-in-out {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.calendarView__headerButtons .clock-in-out button {
+  background-color: #09ACE0;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendarView__headerButtons .clock-in-out button:hover {
+  background-color: #0789b4;
+}
+
+.calendarView__headerButtons .clock-in-out p {
+  font-size: 14px;
+  margin: 0 10px 0 0;
+  color: #333;
+}
+
+.calendarView__actionButton,
+.calendarView__controlButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.calendarView__actionButton {
+  background-color: #09ACE0;
+  color: white;
+}
+
+.calendarView__actionButton:hover {
+  background-color: #0789b4;
+}
+
+.calendarView__controlButton {
+  background-color: #fff;
+  color: #333;
+}
+
+.calendarView__controlButton:hover {
+  background-color: #e6e6e6;
+}
+
+.calendarView__todayButton {
+  background-color: #09ACE0;
+  color: white;
+}
+
+.calendarView__controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendarView__dateDisplay {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 10px;
+}
+
+.calendarView__timeline {
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+}
+
+.calendarView__scrollWrapper {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.calendarView__contentWrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 1375px;
+  flex: 1;
+}
+
+.calendarView__timeHeader {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+.calendarView__timeHeader::before {
+  content: '';
+  position: absolute;
+  left: -20px; 
+  right: -2000px; 
+  top: 0;
+  bottom: 0;
+  background-color: #f8f9fa;
+  z-index: -1;
+}
+
+.calendarView__timeSlot {
+  flex: 0 0 140px; 
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  border-right: 1px solid #e0e0e0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 1;
+  width: 140px; 
+  box-sizing: border-box;
+}
+
+.calendarView__timeSlot::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 1px;
+  height: calc(100vh - 300px); 
+  background-color: rgba(224, 224, 224, 0.5);
+  pointer-events: none;
+}
+
+.calendarView__scrollWrapper {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  flex-grow: 1;
+  background-color: #fff;
+  isolation: isolate; 
+}
+
+.calendarView__timeSlot::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40px; 
+  width: 1px;
+  height: 100vh; 
+  background-color: rgba(224, 224, 224, 0.5);
+  pointer-events: none;
+}
+
+.calendarView__appointmentsContainer {
+  position: relative;
+  height: 100%;
+  width: fit-content;
+  min-width: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 95%,
+    rgba(9, 172, 224, 0.1) 100%
+  );
+}
+.calendarView__appointment {
+  position: absolute;
+  background-color: #e6f7ff;
+  border-left: 3px solid #09ACE0;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  z-index: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.calendarView__appointment:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #e6f7ff 90%
+  );
+  pointer-events: none;
+}
+
+.calendarView__appointment:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  background-color: #d1efff;
+}
+
+.calendarView__appointment:hover:after {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #d1efff 90%
+  );
+}
+
+.calendarView__appointmentTime {
+  font-weight: bold;
+  color: #09ACE0;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendarView__appointmentTitle {
+  font-weight: 600;
+  color: #333;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendarView__appointmentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 11px;
+  color: #666;
+}
+
+.calendarView__appointmentInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendarView__appointmentIcon {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.calendarView__appointmentLabel {
+  color: #09ACE0;
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.calendarView__appointmentStatus {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: rgba(9, 172, 224, 0.1);
+  color: #09ACE0;
+}
+
+.calendarView__appointmentPatient {
+  color: #666;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendarView__currentTimeLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 1024px;
+  background-color: #ff0000;
+  z-index: 3;
+}
+
+.calendarView__currentTimeLine::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.calendarView__scrollWrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.calendarView__scrollWrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.calendarView__scrollWrapper::-webkit-scrollbar-thumb {
+  background: #09ACE0;
+  border-radius: 4px;
+}
+
+.calendarView__scrollWrapper::-webkit-scrollbar-thumb:hover {
+  background: #0789b4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .calendarView__header,
+  .calendarView__controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .calendarView__headerButtons,
+  .calendarView__leftControls,
+  .calendarView__rightControls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .calendarView__actionButton,
+  .calendarView__controlButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .calendarView__dateDisplay {
+    font-size: 16px;
+  }
+
+  .calendarView__timeline {
+    height: calc(100vh - 250px);
+  }
+}
+/* Modal overlay to match the patient style */
+.calendarView__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Modal content container styling */
+.calendarView__modalContent {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-height: 85%;
+  overflow-y: auto;
+}
+
+/* Header for modal with the pet image */
+.calendarView__modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the pet image in the header */
+.calendarView__petImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #09ACE0;
+}
+
+/* Form styles inside the modal */
+.calendarView__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input and select styling */
+.calendarView__input,
+.calendarView__select,
+.calendarView__textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/* Button styles matching the patient side */
+.calendarView__submitButton {
+  background-color: #09ace0;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendarView__submitButton:hover {
+  background-color: #007bbf;
+}
+
+/* Cancel button styles for the modal */
+.calendarView__cancelButton {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendarView__cancelButton:hover {
+  background-color: #d43535;
+}
+
+/* Owner selection list dropdown */
+.calendarView__ownerList {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 150px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.calendarView__ownerList li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calendarView__ownerList li:hover {
+  background-color: #f0f4f8;
+}
+
+/* Additional button container to ensure space between actions */
+.calendarView__buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styling for form fields and alignment */
+.calendarView__ownerSelect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarView__textarea {
+  resize: vertical;
+  min-height: 100px;
+}

@@ -1,0 +1,198 @@
+.financial-main {
+  display: flex;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  width: 97.5%;
+  margin-left: 22px;
+}
+
+.financial-page {
+  width: calc(100% - 270px);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+.patient-header {
+  margin-left: 0px;
+}
+
+.financial-h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.financial-h2 {
+  font-weight: 400;
+}
+
+.estimate-section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  margin-right: 27px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.estimate-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.estimate-header-container button {
+  margin-right: 10px;
+  padding: 0.1rem 0.5rem;
+  background-color: #09ace0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.estimate-header-container button:hover {
+  background-color: #2980b9;
+}
+
+.financial-edit-button {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border-color: #09ace0;
+}
+
+.financial-edit-button:hover {
+  background-color: #09ace0;
+  color: white;
+}
+
+.financial-complete {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border-color: #09cb8b;
+}
+
+.financial-complete:hover {
+  background-color: #09cb8b;
+  color: white;
+}
+
+.financial-pending {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  border-color: #e6b249;
+}
+
+.financial-pending:hover {
+  background-color: #e6b249;
+  color: white;
+}
+
+.status-estimate {
+  border: 1px solid #d852d8;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  background-color: #d852d8;
+}
+
+.status-pending {
+  border: 1px solid #e6b249;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  background-color: #e6b249;
+}
+
+.status-completed {
+  border: 2px solid #09cb8b;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  background-color: #09cb8b;
+}
+
+.status-cancelled {
+  border: 2px solid #e74c3c;
+  padding: 5px;
+  border-radius: 6px;
+  color: white;
+  background-color: #e74c3c;
+}
+
+.estimate-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.estimate-table th,
+.estimate-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.estimate-table th {
+  font-weight: 500;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.estimate-table tr {
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.estimate-table tr:hover {
+  background-color: #eef2f7;
+}
+
+
+.financial-cancel-button {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  border-color: #e74c3c;
+}
+
+.financial-cancel-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.convert-button {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.convert-button:hover {
+  background-color: #09ace0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .financial-page {
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "capstone_villagetech",
+  "version": "1.0.0",
+  "description": "A capstone project for students in software development",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^6.1.4",
+    "dotenv": "^16.4.5"
+  }
+}
