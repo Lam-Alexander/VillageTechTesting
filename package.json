@@ -4,7 +4,9 @@
   "description": "A capstone project for students in software development",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"  
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "@babel/plugin-syntax-jsx": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0"
   }
 }
