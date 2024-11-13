@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/github/MushysWebs/Capstone_VillageTech/graph/badge.svg?token=Y5OY005Q3W)](https://codecov.io/github/MushysWebs/Capstone_VillageTech)
+[![codecov](https://codecov.io/gh/Lam-Alexander/VillageTechTesting/graph/badge.svg?token=4MADJ5X8DD)](https://codecov.io/gh/Lam-Alexander/VillageTechTesting)
 
 
 # July 25, 2024
