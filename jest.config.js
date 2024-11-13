@@ -13,4 +13,13 @@ module.exports = {
     ["jest-junit", { outputDirectory: "./reports", outputName: "junit.xml" }], // Add JUnit reporter
   ],
   testEnvironment: "jsdom",  // Ensure this line is added to use the jsdom environment for React testing
+  collectCoverage: true,  // Enable coverage collection
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
 };
