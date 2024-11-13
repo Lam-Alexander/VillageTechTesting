@@ -14,8 +14,6 @@ module.exports = {
   ],
   testEnvironment: "jsdom",  // Ensure this line is added to use the jsdom environment for React testing
   collectCoverage: true,  // Enable coverage collection
-  coverageDirectory: "./coverage",  // Specify the directory where Jest should output coverage files
-  coverageReporters: ["text", "lcov", "json", "cobertura"], // Choose the format for the coverage report
   coverageThreshold: {
     global: {
       branches: 80,
