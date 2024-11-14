@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="10" failures="10" errors="0" time="1.679">
-  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T04:12:19" time="0.267" tests="7">
-    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.001">
+<testsuites name="jest tests" tests="12" failures="11" errors="0" time="1.653">
+  <testsuite name="PatientContext" errors="0" failures="1" skipped="0" timestamp="2024-11-14T04:19:15" time="0.334" tests="2">
+    <testcase classname="PatientContext provides the correct context values" name="PatientContext provides the correct context values" time="0.015">
+      <failure>TypeError: expect(...).toHaveTextContent is not a function
+    at Object.toHaveTextContent (/Users/alex/Documents/VillageTechTesting/client/src/context/PatientContext.test.js:35:52)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="PatientContext throws an error when usePatient is used outside of a PatientProvider" name="PatientContext throws an error when usePatient is used outside of a PatientProvider" time="0.015">
+    </testcase>
+  </testsuite>
+  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T04:19:15" time="0.403" tests="7">
+    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.002">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:37:8)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
@@ -24,9 +46,10 @@
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0.001">
+    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:52:35)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
@@ -49,9 +72,10 @@
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.022">
+    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.026">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -81,9 +105,10 @@
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page closes Add Estimate modal" name="Financial Page closes Add Estimate modal" time="0.004">
+    <testcase classname="Financial Page closes Add Estimate modal" name="Financial Page closes Add Estimate modal" time="0.006">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -113,9 +138,10 @@
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.003">
+    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.005">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -153,9 +179,10 @@
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.024">
+    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.029">
       <failure>TestingLibraryElementError: Unable to find an element with the text: Patient Information. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
 Ignored nodes: comments, script, style
@@ -329,7 +356,8 @@ Ignored nodes: comments, script, style
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="Financial Page handles Add Estimate modal form submission" name="Financial Page handles Add Estimate modal form submission" time="0.002">
       <failure>TestingLibraryElementError: Unable to find a label with the text of: Estimate Name
@@ -363,11 +391,12 @@ Ignored nodes: comments, script, style
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T04:12:19" time="1.103" tests="3">
-    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.005">
+  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T04:19:15" time="1.38" tests="3">
+    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.032">
       <failure>TypeError: expect(...).toBeInTheDocument is not a function
     at toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:65:48)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:2:1)
@@ -382,6 +411,7 @@ Ignored nodes: comments, script, style
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
     at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
     at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
     at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
     at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
@@ -389,7 +419,8 @@ Ignored nodes: comments, script, style
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
     <testcase classname="PatientSidebar displays &apos;No patient selected&apos; when no patient is selected" name="PatientSidebar displays &apos;No patient selected&apos; when no patient is selected" time="0.001">
       <failure>TypeError: expect(...).toBeInTheDocument is not a function
@@ -398,6 +429,7 @@ Ignored nodes: comments, script, style
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
     at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
     at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
     at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
     at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
@@ -405,9 +437,10 @@ Ignored nodes: comments, script, style
     at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
     at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.01">
+    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.016">
       <failure>Error: expect(received).toHaveBeenCalledWith(...expected)
 
 Matcher error: received value must be a mock or spy function
