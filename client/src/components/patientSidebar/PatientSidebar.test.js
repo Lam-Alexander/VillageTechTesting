@@ -4,7 +4,6 @@ import PatientSidebar from "./PatientSidebar"; // Adjust path as needed
 import { usePatient } from "../../context/PatientContext";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
-// Mocking the usePatient context and useSupabaseClient hook
 jest.mock("../../context/PatientContext");
 jest.mock("@supabase/auth-helpers-react");
 
