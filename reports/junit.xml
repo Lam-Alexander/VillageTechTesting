@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="12" failures="11" errors="0" time="1.658">
-  <testsuite name="PatientContext" errors="0" failures="1" skipped="0" timestamp="2024-11-14T04:41:13" time="0.352" tests="2">
+<testsuites name="jest tests" tests="12" failures="11" errors="0" time="1.634">
+  <testsuite name="PatientContext" errors="0" failures="1" skipped="0" timestamp="2024-11-14T04:57:41" time="0.324" tests="2">
     <testcase classname="PatientContext provides the correct context values" name="PatientContext provides the correct context values" time="0.015">
       <failure>TypeError: expect(...).toHaveTextContent is not a function
     at Object.toHaveTextContent (/Users/alex/Documents/VillageTechTesting/client/src/context/PatientContext.test.js:35:52)
@@ -19,10 +19,10 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="PatientContext throws an error when usePatient is used outside of a PatientProvider" name="PatientContext throws an error when usePatient is used outside of a PatientProvider" time="0.016">
+    <testcase classname="PatientContext throws an error when usePatient is used outside of a PatientProvider" name="PatientContext throws an error when usePatient is used outside of a PatientProvider" time="0.015">
     </testcase>
   </testsuite>
-  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T04:41:13" time="0.418" tests="7">
+  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T04:57:41" time="0.385" tests="7">
     <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.002">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:37:8)
@@ -49,7 +49,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0">
+    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0.001">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:52:35)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
@@ -75,7 +75,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.024">
+    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.027">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -108,7 +108,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page closes Add Estimate modal" name="Financial Page closes Add Estimate modal" time="0.005">
+    <testcase classname="Financial Page closes Add Estimate modal" name="Financial Page closes Add Estimate modal" time="0.003">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -141,7 +141,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.005">
+    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.003">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -182,7 +182,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.028">
+    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.032">
       <failure>TestingLibraryElementError: Unable to find an element with the text: Patient Information. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
 Ignored nodes: comments, script, style
@@ -395,8 +395,8 @@ Ignored nodes: comments, script, style
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T04:41:13" time="1.393" tests="3">
-    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.034">
+  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T04:57:41" time="1.367" tests="3">
+    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.033">
       <failure>TypeError: expect(...).toBeInTheDocument is not a function
     at toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:65:48)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:2:1)
@@ -440,7 +440,7 @@ Ignored nodes: comments, script, style
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.016">
+    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.017">
       <failure>Error: expect(received).toHaveBeenCalledWith(...expected)
 
 Matcher error: received value must be a mock or spy function

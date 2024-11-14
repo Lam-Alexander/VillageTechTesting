@@ -48,13 +48,16 @@ describe("PatientContext", () => {
   it("throws an error when usePatient is used outside of a PatientProvider", () => {
     // Custom component to consume context outside of PatientProvider
     const TestComponent = () => {
-      usePatient();
+      usePatient(); // Call the hook to trigger the error
       return null;
     };
 
-    // Try rendering the component outside the PatientProvider to trigger the error
-    expect(() =>
-      render(<TestComponent />)
-    ).toThrow("usePatient must be used within a PatientProvider");
+    // Expecting that rendering the component outside the PatientProvider will throw the error
+    const renderComponent = () => render(<TestComponent />);
+
+    // Check if the error is thrown with the correct message
+    expect(renderComponent).toThrow(
+      "usePatient must be used within a PatientProvider"
+    );
   });
 });
