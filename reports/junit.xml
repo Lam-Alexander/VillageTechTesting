@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="3" errors="0" time="0.395">
-  <testsuite name="Financial Page" errors="0" failures="3" skipped="0" timestamp="2024-11-14T03:19:43" time="0.263" tests="3">
-    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.041">
+<testsuites name="jest tests" tests="3" failures="3" errors="0" time="0.377">
+  <testsuite name="Financial Page" errors="0" failures="3" skipped="0" timestamp="2024-11-14T03:28:04" time="0.256" tests="3">
+    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.042">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -41,7 +41,7 @@
     at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
-    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.006">
+    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.005">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
