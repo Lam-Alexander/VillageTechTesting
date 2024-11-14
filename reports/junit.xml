@@ -1,7 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.409">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-11-14T02:16:12" time="0.214" tests="1">
-    <testcase classname=" 1 + 1 equals 2" name=" 1 + 1 equals 2" time="0">
+<testsuites name="jest tests" tests="3" failures="3" errors="0" time="0.368">
+  <testsuite name="Financial Page" errors="0" failures="3" skipped="0" timestamp="2024-11-14T03:06:02" time="0.249" tests="3">
+    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.041">
+      <failure>ReferenceError: React is not defined
+    at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:37:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.006">
+      <failure>ReferenceError: React is not defined
+    at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:48:11)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.009">
+      <failure>ReferenceError: React is not defined
+    at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee2$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:60:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)</failure>
     </testcase>
   </testsuite>
 </testsuites>

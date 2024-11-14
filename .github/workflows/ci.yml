@@ -24,12 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Jest tests and generate JUnit XML
+      - name: Run Jest tests and generate coverage report
         run: npm test -- --coverage
 
-      - name: Upload test results to Codecov
+      - name: Upload coverage to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: './reports/junit.xml'  # Path to the JUnit XML file
+          files: './coverage/lcov.info'  # Path to the lcov report
+          flags: unittests
+          fail_ci_if_error: true

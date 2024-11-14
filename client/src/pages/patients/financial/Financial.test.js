@@ -1,6 +1,6 @@
+import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Financial from "./Financial";
-import React from "react";
 import { usePatient } from "../../../context/PatientContext";
 import { supabase } from "../../../components/routes/supabaseClient";
 
@@ -22,11 +22,17 @@ jest.mock("../../../components/routes/supabaseClient", () => ({
 
 describe("Financial Page", () => {
   beforeEach(() => {
-    usePatient.mockReturnValue({ selectedPatient: { id: 1, name: "Test Patient" } });
+    usePatient.mockReturnValue({
+      selectedPatient: { id: 1, name: "Test Patient" },
+    });
   });
 
   test("renders Financial page and fetches data", async () => {
-    supabase.from().select().eq().eq.mockResolvedValueOnce({ data: [], error: null });
+    supabase
+      .from()
+      .select()
+      .eq()
+      .eq.mockResolvedValueOnce({ data: [], error: null });
 
     render(<Financial />);
     expect(screen.getByText("Estimates")).toBeInTheDocument();
@@ -59,12 +65,16 @@ describe("Financial Page", () => {
     fireEvent.click(convertButton);
 
     await waitFor(() => {
-      expect(supabase.from().insert).toHaveBeenCalledWith(expect.objectContaining({
-        invoice_name: exampleEstimate.estimate_name,
-      }));
-      expect(supabase.from().update).toHaveBeenCalledWith(expect.objectContaining({
-        is_active: false,
-      }));
+      expect(supabase.from().insert).toHaveBeenCalledWith(
+        expect.objectContaining({
+          invoice_name: exampleEstimate.estimate_name,
+        })
+      );
+      expect(supabase.from().update).toHaveBeenCalledWith(
+        expect.objectContaining({
+          is_active: false,
+        })
+      );
     });
   });
 });
