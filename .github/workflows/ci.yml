@@ -29,7 +29,7 @@ jobs:
 
       - name: Check if coverage report exists
         run: |
-          if [ -f "./client/coverage/lcov-report/lcov-report.json" ]; then
+          if [ -f "./client/coverage/lcov-report/lcov.info" ]; then
             echo "Coverage report found"
           else
             echo "Coverage report not found"
