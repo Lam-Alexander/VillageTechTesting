@@ -31,7 +31,7 @@ jobs:
         if: ${{ !cancelled() }}
         uses: codecov/codecov-action@v3
         with:
-          token: eb119703-ede1-4513-a8e9-4037b75fdbb0
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: './client/coverage/lcov.info'  # Path to the lcov report
           flags: unittests
           fail_ci_if_error: true
