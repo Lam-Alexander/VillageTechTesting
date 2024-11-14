@@ -27,11 +27,19 @@ jobs:
       - name: Run Jest tests and generate coverage report
         run: npm test -- --coverage
 
+      - name: Check if coverage report exists
+        run: |
+          if [ -f "./client/coverage/lcov-report/lcov-report.json" ]; then
+            echo "Coverage report found"
+          else
+            echo "Coverage report not found"
+            exit 1
+          fi
+
       - name: Upload coverage to Codecov
-        if: ${{ !cancelled() }}
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: './client/coverage/lcov-report/lcov-report.json'  # Path to the lcov report
+          files: './client/coverage/lcov-report/coverage-final.json'  # Correct path
           flags: unittests
           fail_ci_if_error: true
