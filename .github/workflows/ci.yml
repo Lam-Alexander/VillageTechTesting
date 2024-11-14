@@ -32,6 +32,6 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: "./client/coverage/lcov-report/lcov-report.json" # Path to the correct lcov report
+          files: "./client/coverage/lcov.info" # Path to the correct lcov report
           flags: unittests
           fail_ci_if_error: true
