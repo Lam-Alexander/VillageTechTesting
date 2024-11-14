@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor, act } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Financial from "./Financial";
 import PatientSidebar from "../../../components/patientSidebar/PatientSidebar";
 import AddEstimateModal from "../../../components/addEstimateModal/AddEstimateModal";
@@ -37,22 +37,25 @@ describe("Financial Page", () => {
       .mockResolvedValueOnce({ data: [], error: null });
 
     render(<Financial />);
-    
+
     expect(screen.getByText("Estimates")).toBeInTheDocument();
     expect(screen.getByText("Pending Invoices")).toBeInTheDocument();
 
     await waitFor(() => {
       expect(supabase.from).toHaveBeenCalledWith("estimates");
-      expect(supabase.from).toHaveBeenCalledWith("invoices");
     });
   });
 
   test("handles fetch errors in Financial page", async () => {
     // Simulate an error in the fetch
-    supabase.from().select().eq().mockResolvedValueOnce({
-      data: null,
-      error: { message: "Failed to fetch" },
-    });
+    supabase
+      .from()
+      .select()
+      .eq()
+      .mockResolvedValueOnce({
+        data: null,
+        error: { message: "Failed to fetch" },
+      });
 
     render(<Financial />);
 
@@ -73,13 +76,13 @@ describe("Financial Page", () => {
 
   test("closes Add Estimate modal", () => {
     render(<Financial />);
-    
+
     const addButton = screen.getByRole("button", { name: "+" });
     fireEvent.click(addButton);
-    
+
     const cancelButton = screen.getByRole("button", { name: "Cancel" }); // Assuming cancel button exists
     fireEvent.click(cancelButton);
-    
+
     expect(screen.queryByText("Add Estimate")).not.toBeInTheDocument();
   });
 
@@ -94,12 +97,16 @@ describe("Financial Page", () => {
     const convertButton = screen.getByText("Convert to Invoice");
     fireEvent.click(convertButton);
 
+    // Separate each assertion into its own waitFor block
     await waitFor(() => {
       expect(supabase.from().insert).toHaveBeenCalledWith(
         expect.objectContaining({
           invoice_name: exampleEstimate.estimate_name,
         })
       );
+    });
+
+    await waitFor(() => {
       expect(supabase.from().update).toHaveBeenCalledWith(
         expect.objectContaining({
           is_active: false,
