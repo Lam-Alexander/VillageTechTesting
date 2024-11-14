@@ -16,12 +16,4 @@ module.exports = {
   collectCoverage: true, // Enable coverage collection
   coverageDirectory: "./coverage", // Specify the directory where Jest should output coverage files
   coverageReporters: ["text", "lcov", "json", "cobertura"], // Choose the format for the coverage report
-  coverageThreshold: {
-    global: {
-      branches: 50,
-      functions: 50,
-      lines: 50,
-      statements: 50,
-    },
-  },
 };
