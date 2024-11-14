@@ -40,6 +40,6 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: './client/coverage/lcov-report/coverage-final.json'  # Correct path
+          files: './client/coverage/lcov-report/lcov.info'  # Correct path
           flags: unittests
           fail_ci_if_error: true
