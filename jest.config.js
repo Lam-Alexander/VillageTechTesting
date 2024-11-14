@@ -12,8 +12,8 @@ module.exports = {
     "default",
     ["jest-junit", { outputDirectory: "./reports", outputName: "junit.xml" }], // Add JUnit reporter
   ],
-  testEnvironment: "jsdom", // Ensure this line is added to use the jsdom environment for React testing
-  collectCoverage: true, // Enable coverage collection
-  coverageDirectory: "./client/coverage", // Specify the directory where Jest should output coverage files
+  testEnvironment: "jsdom",
+  collectCoverage: true,
+  coverageDirectory: "./client/coverage", // Change this line to save coverage inside the client/coverage folder
   coverageReporters: ["text", "lcov", "json", "cobertura"], // Choose the format for the coverage report
 };
