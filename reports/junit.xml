@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="3" errors="0" time="0.367">
-  <testsuite name="Financial Page" errors="0" failures="3" skipped="0" timestamp="2024-11-14T03:08:26" time="0.247" tests="3">
+<testsuites name="jest tests" tests="3" failures="3" errors="0" time="0.368">
+  <testsuite name="Financial Page" errors="0" failures="3" skipped="0" timestamp="2024-11-14T03:10:51" time="0.248" tests="3">
     <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.041">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)

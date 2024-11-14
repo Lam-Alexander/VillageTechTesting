@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@mui/icons-material": "^6.1.4",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
