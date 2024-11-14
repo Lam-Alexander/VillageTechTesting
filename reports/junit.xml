@@ -1,7 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="35" failures="34" errors="0" time="2.008">
-  <testsuite name="PatientContext" errors="0" failures="1" skipped="0" timestamp="2024-11-14T20:09:34" time="0.545" tests="2">
-    <testcase classname="PatientContext provides the correct context values" name="PatientContext provides the correct context values" time="0.016">
+<testsuites name="jest tests" tests="37" failures="36" errors="0" time="2.097">
+  <testsuite name="AddNoteModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:21:25" time="0.586" tests="4">
+    <testcase classname="AddNoteModal renders the modal when isOpen is true" name="AddNoteModal renders the modal when isOpen is true" time="0.034">
+      <failure>ReferenceError: React is not defined
+    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:14:11)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="AddNoteModal does not render the modal when isOpen is false" name="AddNoteModal does not render the modal when isOpen is false" time="0.01">
+      <failure>TypeError: expect(...).not.toBeInTheDocument is not a function
+    at Object.toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:27:48)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="AddNoteModal calls onAddNote with the correct values when Add button is clicked" name="AddNoteModal calls onAddNote with the correct values when Add button is clicked" time="0.012">
+      <failure>ReferenceError: React is not defined
+    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:32:11)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="AddNoteModal calls onClose when Cancel button is clicked" name="AddNoteModal calls onClose when Cancel button is clicked" time="0.004">
+      <failure>ReferenceError: React is not defined
+    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:63:11)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="PatientContext" errors="0" failures="1" skipped="0" timestamp="2024-11-14T20:21:25" time="0.603" tests="2">
+    <testcase classname="PatientContext provides the correct context values" name="PatientContext provides the correct context values" time="0.02">
       <failure>TypeError: expect(...).toHaveTextContent is not a function
     at Object.toHaveTextContent (/Users/alex/Documents/VillageTechTesting/client/src/context/PatientContext.test.js:35:52)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
@@ -19,11 +138,11 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="PatientContext throws an error when usePatient is used outside of a PatientProvider" name="PatientContext throws an error when usePatient is used outside of a PatientProvider" time="0.026">
+    <testcase classname="PatientContext throws an error when usePatient is used outside of a PatientProvider" name="PatientContext throws an error when usePatient is used outside of a PatientProvider" time="0.016">
     </testcase>
   </testsuite>
-  <testsuite name="AddMedicationModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:09:34" time="0.547" tests="4">
-    <testcase classname="AddMedicationModal renders the modal when isOpen is true" name="AddMedicationModal renders the modal when isOpen is true" time="0.053">
+  <testsuite name="AddMedicationModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:21:25" time="0.626" tests="4">
+    <testcase classname="AddMedicationModal renders the modal when isOpen is true" name="AddMedicationModal renders the modal when isOpen is true" time="0.04">
       <failure>ReferenceError: React is not defined
     at AddMedicationModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addMedicationModal/AddMedicationModal.js:51:5)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -56,7 +175,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddMedicationModal does not render the modal when isOpen is false" name="AddMedicationModal does not render the modal when isOpen is false" time="0.007">
+    <testcase classname="AddMedicationModal does not render the modal when isOpen is false" name="AddMedicationModal does not render the modal when isOpen is false" time="0.023">
       <failure>TypeError: expect(...).not.toBeInTheDocument is not a function
     at Object.toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/addMedicationModal/AddMedicationModal.test.js:27:54)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
@@ -74,7 +193,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddMedicationModal calls onAddMedication with the correct values when Add button is clicked" name="AddMedicationModal calls onAddMedication with the correct values when Add button is clicked" time="0.003">
+    <testcase classname="AddMedicationModal calls onAddMedication with the correct values when Add button is clicked" name="AddMedicationModal calls onAddMedication with the correct values when Add button is clicked" time="0.007">
       <failure>ReferenceError: React is not defined
     at AddMedicationModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addMedicationModal/AddMedicationModal.js:51:5)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -107,7 +226,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddMedicationModal calls onClose when Cancel button is clicked" name="AddMedicationModal calls onClose when Cancel button is clicked" time="0.006">
+    <testcase classname="AddMedicationModal calls onClose when Cancel button is clicked" name="AddMedicationModal calls onClose when Cancel button is clicked" time="0.003">
       <failure>ReferenceError: React is not defined
     at AddMedicationModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addMedicationModal/AddMedicationModal.js:51:5)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -141,127 +260,8 @@
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="AddVitalModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:09:35" time="0.558" tests="4">
-    <testcase classname="AddVitalModal renders the modal when isOpen is true" name="AddVitalModal renders the modal when isOpen is true" time="0.026">
-      <failure>ReferenceError: React is not defined
-    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:14:11)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="AddVitalModal does not render the modal when isOpen is false" name="AddVitalModal does not render the modal when isOpen is false" time="0.012">
-      <failure>TypeError: expect(...).not.toBeInTheDocument is not a function
-    at Object.toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:27:49)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="AddVitalModal calls onAddVital with the correct values when Add button is clicked" name="AddVitalModal calls onAddVital with the correct values when Add button is clicked" time="0.016">
-      <failure>ReferenceError: React is not defined
-    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:32:11)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="AddVitalModal calls onClose when Cancel button is clicked" name="AddVitalModal calls onClose when Cancel button is clicked" time="0.015">
-      <failure>ReferenceError: React is not defined
-    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:71:11)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="AddAllergyModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:09:34" time="0.592" tests="4">
-    <testcase classname="AddAllergyModal renders the modal when isOpen is true" name="AddAllergyModal renders the modal when isOpen is true" time="0.038">
+  <testsuite name="AddAllergyModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:21:25" time="0.606" tests="4">
+    <testcase classname="AddAllergyModal renders the modal when isOpen is true" name="AddAllergyModal renders the modal when isOpen is true" time="0.025">
       <failure>ReferenceError: React is not defined
     at AddAllergyModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addAllergyModal/AddAllergyModal.js:26:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -312,7 +312,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddAllergyModal calls onAddAllergy with the correct values when Add button is clicked" name="AddAllergyModal calls onAddAllergy with the correct values when Add button is clicked" time="0.004">
+    <testcase classname="AddAllergyModal calls onAddAllergy with the correct values when Add button is clicked" name="AddAllergyModal calls onAddAllergy with the correct values when Add button is clicked" time="0.003">
       <failure>ReferenceError: React is not defined
     at AddAllergyModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addAllergyModal/AddAllergyModal.js:26:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -345,7 +345,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddAllergyModal calls onClose when Cancel button is clicked" name="AddAllergyModal calls onClose when Cancel button is clicked" time="0.01">
+    <testcase classname="AddAllergyModal calls onClose when Cancel button is clicked" name="AddAllergyModal calls onClose when Cancel button is clicked" time="0.003">
       <failure>ReferenceError: React is not defined
     at AddAllergyModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addAllergyModal/AddAllergyModal.js:26:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -379,10 +379,10 @@
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="AddNoteModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:09:34" time="0.616" tests="4">
-    <testcase classname="AddNoteModal renders the modal when isOpen is true" name="AddNoteModal renders the modal when isOpen is true" time="0.047">
+  <testsuite name="AddVitalModal" errors="0" failures="4" skipped="0" timestamp="2024-11-14T20:21:25" time="0.629" tests="4">
+    <testcase classname="AddVitalModal renders the modal when isOpen is true" name="AddVitalModal renders the modal when isOpen is true" time="0.033">
       <failure>ReferenceError: React is not defined
-    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
     at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
     at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
@@ -397,7 +397,7 @@
     at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
     at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
     at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:14:11)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:14:11)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
@@ -413,9 +413,9 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddNoteModal does not render the modal when isOpen is false" name="AddNoteModal does not render the modal when isOpen is false" time="0.008">
+    <testcase classname="AddVitalModal does not render the modal when isOpen is false" name="AddVitalModal does not render the modal when isOpen is false" time="0.036">
       <failure>TypeError: expect(...).not.toBeInTheDocument is not a function
-    at Object.toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:27:48)
+    at Object.toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:27:49)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
@@ -431,9 +431,9 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddNoteModal calls onAddNote with the correct values when Add button is clicked" name="AddNoteModal calls onAddNote with the correct values when Add button is clicked" time="0.004">
+    <testcase classname="AddVitalModal calls onAddVital with the correct values when Add button is clicked" name="AddVitalModal calls onAddVital with the correct values when Add button is clicked" time="0.003">
       <failure>ReferenceError: React is not defined
-    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
     at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
     at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
@@ -448,7 +448,7 @@
     at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
     at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
     at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:32:11)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:32:11)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
@@ -464,9 +464,9 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="AddNoteModal calls onClose when Cancel button is clicked" name="AddNoteModal calls onClose when Cancel button is clicked" time="0.003">
+    <testcase classname="AddVitalModal calls onClose when Cancel button is clicked" name="AddVitalModal calls onClose when Cancel button is clicked" time="0.003">
       <failure>ReferenceError: React is not defined
-    at AddNoteModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.js:26:3)
+    at AddVitalModal (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.js:32:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
     at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
     at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
@@ -481,7 +481,7 @@
     at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
     at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
     at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addNoteModal/AddNoteModal.test.js:63:11)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/components/addVitalModal/AddVitalModal.test.js:71:11)
     at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
@@ -498,8 +498,1039 @@
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T20:09:34" time="0.669" tests="7">
-    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.002">
+  <testsuite name="CreateContactModal" errors="0" failures="2" skipped="0" timestamp="2024-11-14T20:21:25" time="0.636" tests="2">
+    <testcase classname="CreateContactModal displays error message when profile picture upload fails" name="CreateContactModal displays error message when profile picture upload fails" time="0.042">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Upload Photo
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;contacts-modal-overlay&quot;
+    &gt;
+      &lt;div
+        class=&quot;contacts-modal-content new-contact-modal&quot;
+      &gt;
+        &lt;button
+          class=&quot;modal-close-button&quot;
+        &gt;
+          &lt;svg
+            class=&quot;lucide lucide-x&quot;
+            fill=&quot;none&quot;
+            height=&quot;24&quot;
+            stroke=&quot;currentColor&quot;
+            stroke-linecap=&quot;round&quot;
+            stroke-linejoin=&quot;round&quot;
+            stroke-width=&quot;2&quot;
+            viewBox=&quot;0 0 24 24&quot;
+            width=&quot;24&quot;
+            xmlns=&quot;http://www.w3.org/2000/svg&quot;
+          &gt;
+            &lt;path
+              d=&quot;M18 6 6 18&quot;
+            /&gt;
+            &lt;path
+              d=&quot;m6 6 12 12&quot;
+            /&gt;
+          &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;div
+          class=&quot;modal-header&quot;
+        &gt;
+          &lt;div
+            class=&quot;profile-upload-container&quot;
+          &gt;
+            &lt;img
+              alt=&quot;&quot;
+              class=&quot;profile-preview&quot;
+            /&gt;
+            &lt;div
+              class=&quot;profile-upload-overlay&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-camera&quot;
+                fill=&quot;none&quot;
+                height=&quot;24&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;24&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z&quot;
+                /&gt;
+                &lt;circle
+                  cx=&quot;12&quot;
+                  cy=&quot;13&quot;
+                  r=&quot;3&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;span&gt;
+                Upload Photo
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;input
+              accept=&quot;image/*&quot;
+              style=&quot;display: none;&quot;
+              type=&quot;file&quot;
+            /&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;modal-title-section&quot;
+          &gt;
+            &lt;h2&gt;
+              Create New Contact
+            &lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;form
+          class=&quot;new-contact-form&quot;
+        &gt;
+          &lt;div
+            class=&quot;form-grid&quot;
+          &gt;
+            &lt;div
+              class=&quot;form-section&quot;
+            &gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-user&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2&quot;
+                  /&gt;
+                  &lt;circle
+                    cx=&quot;12&quot;
+                    cy=&quot;7&quot;
+                    r=&quot;4&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;div
+                  class=&quot;name-inputs&quot;
+                &gt;
+                  &lt;input
+                    class=&quot;contact-input&quot;
+                    name=&quot;first_name&quot;
+                    placeholder=&quot;First Name *&quot;
+                    type=&quot;text&quot;
+                    value=&quot;&quot;
+                  /&gt;
+                  &lt;input
+                    class=&quot;contact-input&quot;
+                    name=&quot;last_name&quot;
+                    placeholder=&quot;Last Name *&quot;
+                    type=&quot;text&quot;
+                    value=&quot;&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-mail&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;rect
+                    height=&quot;16&quot;
+                    rx=&quot;2&quot;
+                    width=&quot;20&quot;
+                    x=&quot;2&quot;
+                    y=&quot;4&quot;
+                  /&gt;
+                  &lt;path
+                    d=&quot;m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;email&quot;
+                  placeholder=&quot;Email *&quot;
+                  type=&quot;email&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;form-section&quot;
+            &gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-phone&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;phone_number&quot;
+                  placeholder=&quot;Primary Phone&quot;
+                  type=&quot;tel&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-phone&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;secondary_phone_number&quot;
+                  placeholder=&quot;Secondary Phone&quot;
+                  type=&quot;tel&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;full-width-inputs&quot;
+          &gt;
+            &lt;div
+              class=&quot;input-group&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-map-pin&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0&quot;
+                /&gt;
+                &lt;circle
+                  cx=&quot;12&quot;
+                  cy=&quot;10&quot;
+                  r=&quot;3&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;input
+                class=&quot;contact-input&quot;
+                name=&quot;address&quot;
+                placeholder=&quot;Address&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;input-group&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-file-text&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M10 9H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 13H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 17H8&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;textarea
+                class=&quot;contact-input contact-textarea&quot;
+                name=&quot;notes&quot;
+                placeholder=&quot;Notes&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;modal-footer&quot;
+          &gt;
+            &lt;button
+              class=&quot;cancel-button&quot;
+              type=&quot;button&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-x&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M18 6 6 18&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;m6 6 12 12&quot;
+                /&gt;
+              &lt;/svg&gt;
+              Cancel
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;submit-button&quot;
+              type=&quot;submit&quot;
+            &gt;
+              Create
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getAllByLabelText (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at getByLabelText (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:42:29)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="CreateContactModal handles successful profile picture upload" name="CreateContactModal handles successful profile picture upload" time="0.013">
+      <failure>TestingLibraryElementError: Unable to find a label with the text of: Upload Photo
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;contacts-modal-overlay&quot;
+    &gt;
+      &lt;div
+        class=&quot;contacts-modal-content new-contact-modal&quot;
+      &gt;
+        &lt;button
+          class=&quot;modal-close-button&quot;
+        &gt;
+          &lt;svg
+            class=&quot;lucide lucide-x&quot;
+            fill=&quot;none&quot;
+            height=&quot;24&quot;
+            stroke=&quot;currentColor&quot;
+            stroke-linecap=&quot;round&quot;
+            stroke-linejoin=&quot;round&quot;
+            stroke-width=&quot;2&quot;
+            viewBox=&quot;0 0 24 24&quot;
+            width=&quot;24&quot;
+            xmlns=&quot;http://www.w3.org/2000/svg&quot;
+          &gt;
+            &lt;path
+              d=&quot;M18 6 6 18&quot;
+            /&gt;
+            &lt;path
+              d=&quot;m6 6 12 12&quot;
+            /&gt;
+          &lt;/svg&gt;
+        &lt;/button&gt;
+        &lt;div
+          class=&quot;modal-header&quot;
+        &gt;
+          &lt;div
+            class=&quot;profile-upload-container&quot;
+          &gt;
+            &lt;img
+              alt=&quot;&quot;
+              class=&quot;profile-preview&quot;
+            /&gt;
+            &lt;div
+              class=&quot;profile-upload-overlay&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-camera&quot;
+                fill=&quot;none&quot;
+                height=&quot;24&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;24&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z&quot;
+                /&gt;
+                &lt;circle
+                  cx=&quot;12&quot;
+                  cy=&quot;13&quot;
+                  r=&quot;3&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;span&gt;
+                Upload Photo
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;input
+              accept=&quot;image/*&quot;
+              style=&quot;display: none;&quot;
+              type=&quot;file&quot;
+            /&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;modal-title-section&quot;
+          &gt;
+            &lt;h2&gt;
+              Create New Contact
+            &lt;/h2&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;form
+          class=&quot;new-contact-form&quot;
+        &gt;
+          &lt;div
+            class=&quot;form-grid&quot;
+          &gt;
+            &lt;div
+              class=&quot;form-section&quot;
+            &gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-user&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2&quot;
+                  /&gt;
+                  &lt;circle
+                    cx=&quot;12&quot;
+                    cy=&quot;7&quot;
+                    r=&quot;4&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;div
+                  class=&quot;name-inputs&quot;
+                &gt;
+                  &lt;input
+                    class=&quot;contact-input&quot;
+                    name=&quot;first_name&quot;
+                    placeholder=&quot;First Name *&quot;
+                    type=&quot;text&quot;
+                    value=&quot;&quot;
+                  /&gt;
+                  &lt;input
+                    class=&quot;contact-input&quot;
+                    name=&quot;last_name&quot;
+                    placeholder=&quot;Last Name *&quot;
+                    type=&quot;text&quot;
+                    value=&quot;&quot;
+                  /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-mail&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;rect
+                    height=&quot;16&quot;
+                    rx=&quot;2&quot;
+                    width=&quot;20&quot;
+                    x=&quot;2&quot;
+                    y=&quot;4&quot;
+                  /&gt;
+                  &lt;path
+                    d=&quot;m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;email&quot;
+                  placeholder=&quot;Email *&quot;
+                  type=&quot;email&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;form-section&quot;
+            &gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-phone&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;phone_number&quot;
+                  placeholder=&quot;Primary Phone&quot;
+                  type=&quot;tel&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+              &lt;div
+                class=&quot;input-group&quot;
+              &gt;
+                &lt;svg
+                  class=&quot;lucide lucide-phone&quot;
+                  fill=&quot;none&quot;
+                  height=&quot;18&quot;
+                  stroke=&quot;currentColor&quot;
+                  stroke-linecap=&quot;round&quot;
+                  stroke-linejoin=&quot;round&quot;
+                  stroke-width=&quot;2&quot;
+                  viewBox=&quot;0 0 24 24&quot;
+                  width=&quot;18&quot;
+                  xmlns=&quot;http://www.w3.org/2000/svg&quot;
+                &gt;
+                  &lt;path
+                    d=&quot;M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z&quot;
+                  /&gt;
+                &lt;/svg&gt;
+                &lt;input
+                  class=&quot;contact-input&quot;
+                  name=&quot;secondary_phone_number&quot;
+                  placeholder=&quot;Secondary Phone&quot;
+                  type=&quot;tel&quot;
+                  value=&quot;&quot;
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;full-width-inputs&quot;
+          &gt;
+            &lt;div
+              class=&quot;input-group&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-map-pin&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0&quot;
+                /&gt;
+                &lt;circle
+                  cx=&quot;12&quot;
+                  cy=&quot;10&quot;
+                  r=&quot;3&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;input
+                class=&quot;contact-input&quot;
+                name=&quot;address&quot;
+                placeholder=&quot;Address&quot;
+                type=&quot;text&quot;
+                value=&quot;&quot;
+              /&gt;
+            &lt;/div&gt;
+            &lt;div
+              class=&quot;input-group&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-file-text&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M14 2v4a2 2 0 0 0 2 2h4&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M10 9H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 13H8&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;M16 17H8&quot;
+                /&gt;
+              &lt;/svg&gt;
+              &lt;textarea
+                class=&quot;contact-input contact-textarea&quot;
+                name=&quot;notes&quot;
+                placeholder=&quot;Notes&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class=&quot;modal-footer&quot;
+          &gt;
+            &lt;button
+              class=&quot;cancel-button&quot;
+              type=&quot;button&quot;
+            &gt;
+              &lt;svg
+                class=&quot;lucide lucide-x&quot;
+                fill=&quot;none&quot;
+                height=&quot;18&quot;
+                stroke=&quot;currentColor&quot;
+                stroke-linecap=&quot;round&quot;
+                stroke-linejoin=&quot;round&quot;
+                stroke-width=&quot;2&quot;
+                viewBox=&quot;0 0 24 24&quot;
+                width=&quot;18&quot;
+                xmlns=&quot;http://www.w3.org/2000/svg&quot;
+              &gt;
+                &lt;path
+                  d=&quot;M18 6 6 18&quot;
+                /&gt;
+                &lt;path
+                  d=&quot;m6 6 12 12&quot;
+                /&gt;
+              &lt;/svg&gt;
+              Cancel
+            &lt;/button&gt;
+            &lt;button
+              class=&quot;submit-button&quot;
+              type=&quot;submit&quot;
+            &gt;
+              Create
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at getAllByLabelText (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/queries/label-text.js:111:38)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+    at getByLabelText (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:73:29)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/CreateContactModal.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Contacts Component" errors="0" failures="7" skipped="0" timestamp="2024-11-14T20:21:25" time="0.706" tests="7">
+    <testcase classname="Contacts Component renders without crashing" name="Contacts Component renders without crashing" time="0.062">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:48:11)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component fetches contacts on load" name="Contacts Component fetches contacts on load" time="0.015">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:57:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component handles error when fetching contacts fails" name="Contacts Component handles error when fetching contacts fails" time="0.008">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee2$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:67:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component filters contacts by global search term" name="Contacts Component filters contacts by global search term" time="0.004">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee3$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:83:32)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component creates a new contact" name="Contacts Component creates a new contact" time="0.005">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee4$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:99:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component deletes a contact" name="Contacts Component deletes a contact" time="0.004">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee5$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:119:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Contacts Component handles profile picture click in edit mode" name="Contacts Component handles profile picture click in edit mode" time="0.005">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
+    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
+    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
+    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
+    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
+    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
+    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
+    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
+    at _callee6$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:139:11)
+    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at new Promise (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
+    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Financial Page" errors="0" failures="7" skipped="0" timestamp="2024-11-14T20:21:25" time="0.726" tests="7">
+    <testcase classname="Financial Page renders Financial page and fetches data" name="Financial Page renders Financial page and fetches data" time="0.003">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:37:8)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
@@ -525,7 +1556,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0.002">
+    <testcase classname="Financial Page handles fetch errors in Financial page" name="Financial Page handles fetch errors in Financial page" time="0.001">
       <failure>TypeError: _supabaseClient.supabase.from(...).select(...).eq(...).mockResolvedValueOnce is not a function
     at mockResolvedValueOnce (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:55:8)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.test.js:2:1)
@@ -551,7 +1582,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.031">
+    <testcase classname="Financial Page opens Add Estimate modal" name="Financial Page opens Add Estimate modal" time="0.026">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -617,7 +1648,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.006">
+    <testcase classname="Financial Page handles convertEstimateToInvoice function" name="Financial Page handles convertEstimateToInvoice function" time="0.007">
       <failure>ReferenceError: React is not defined
     at Financial (/Users/alex/Documents/VillageTechTesting/client/src/pages/patients/financial/Financial.js:209:3)
     at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
@@ -658,7 +1689,7 @@
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.035">
+    <testcase classname="Financial Page renders PatientSidebar component" name="Financial Page renders PatientSidebar component" time="0.028">
       <failure>TestingLibraryElementError: Unable to find an element with the text: Patient Information. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
 Ignored nodes: comments, script, style
@@ -871,289 +1902,8 @@ Ignored nodes: comments, script, style
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="Contacts Component" errors="0" failures="7" skipped="0" timestamp="2024-11-14T20:09:34" time="1.147" tests="7">
-    <testcase classname="Contacts Component renders without crashing" name="Contacts Component renders without crashing" time="0.029">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:48:11)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component fetches contacts on load" name="Contacts Component fetches contacts on load" time="0.006">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:57:11)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component handles error when fetching contacts fails" name="Contacts Component handles error when fetching contacts fails" time="0.004">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee2$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:68:11)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component filters contacts by global search term" name="Contacts Component filters contacts by global search term" time="0.004">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee3$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:85:32)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component creates a new contact" name="Contacts Component creates a new contact" time="0.005">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee4$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:102:11)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component deletes a contact" name="Contacts Component deletes a contact" time="0.004">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee5$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:123:11)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-    <testcase classname="Contacts Component handles profile picture click in edit mode" name="Contacts Component handles profile picture click in edit mode" time="0.003">
-      <failure>TypeError: Cannot read properties of undefined (reading &apos;data&apos;)
-    at Contacts (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contacts.js:282:52)
-    at renderWithHooks (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:15486:18)
-    at mountIndeterminateComponent (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:20103:13)
-    at beginWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:21626:16)
-    at beginWork$1 (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:27465:14)
-    at performUnitOfWork (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26599:12)
-    at workLoopSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26505:5)
-    at renderRootSync (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:26473:7)
-    at recoverFromConcurrentError (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25889:20)
-    at performConcurrentWorkOnRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/react-dom/cjs/react-dom.development.js:25789:22)
-    at flushActQueue (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2667:24)
-    at act (/Users/alex/Documents/VillageTechTesting/client/node_modules/react/cjs/react.development.js:2582:11)
-    at /Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/act-compat.js:47:25
-    at renderRoot (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:180:26)
-    at render (/Users/alex/Documents/VillageTechTesting/client/node_modules/@testing-library/react/dist/pure.js:271:10)
-    at _callee6$ (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:144:11)
-    at call (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator.tryCatch (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Generator._invoke [as next] (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at asyncGeneratorStep (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at _next (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at new Promise (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/alex/Documents/VillageTechTesting/client/src/pages/contacts/Contact.test.js:2:1)
-    at Promise.then.completed (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:298:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/utils.js:231:10)
-    at _callCircusTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:316:40)
-    at processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at _runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:252:3)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:126:9)
-    at _runTestsForDescribeBlock (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:121:9)
-    at run (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/run.js:71:3)
-    at runAndTransformResultsToJestFormat (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
-    at jestAdapter (/Users/alex/Documents/VillageTechTesting/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
-    at runTestInternal (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:367:16)
-    at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
-    at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T20:09:34" time="1.583" tests="3">
-    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.046">
+  <testsuite name="PatientSidebar" errors="0" failures="3" skipped="0" timestamp="2024-11-14T20:21:25" time="1.621" tests="3">
+    <testcase classname="PatientSidebar renders the PatientSidebar component" name="PatientSidebar renders the PatientSidebar component" time="0.042">
       <failure>TypeError: expect(...).toBeInTheDocument is not a function
     at toBeInTheDocument (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:64:48)
     at call (/Users/alex/Documents/VillageTechTesting/client/src/components/patientSidebar/PatientSidebar.test.js:2:1)
@@ -1197,7 +1947,7 @@ Ignored nodes: comments, script, style
     at runTest (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/Users/alex/Documents/VillageTechTesting/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.011">
+    <testcase classname="PatientSidebar handles error when fetching data" name="PatientSidebar handles error when fetching data" time="1.014">
       <failure>Error: expect(received).toHaveBeenCalledWith(...expected)
 
 Matcher error: received value must be a mock or spy function

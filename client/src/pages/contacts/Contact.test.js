@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Contacts from "./Contacts";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useNavigate } from "react-router-dom";
@@ -56,10 +56,9 @@ describe("Contacts Component", () => {
 
     render(<Contacts globalSearchTerm="" />);
 
-    await waitFor(() =>
-      expect(mockSupabase.from).toHaveBeenCalledWith("owners")
-    );
-    expect(screen.getByText("John Doe")).toBeInTheDocument();
+    // Using findByText to automatically wait for "John Doe" to appear
+    expect(await screen.findByText("John Doe")).toBeInTheDocument();
+    expect(mockSupabase.from).toHaveBeenCalledWith("owners");
   });
 
   test("handles error when fetching contacts fails", async () => {
@@ -67,11 +66,10 @@ describe("Contacts Component", () => {
 
     render(<Contacts globalSearchTerm="" />);
 
-    await waitFor(() =>
-      expect(
-        screen.getByText("Failed to fetch contacts. Please try again later.")
-      ).toBeInTheDocument()
-    );
+    // Using findByText to wait for the error message to appear
+    expect(
+      await screen.findByText("Failed to fetch contacts. Please try again later.")
+    ).toBeInTheDocument();
   });
 
   test("filters contacts by global search term", async () => {
@@ -84,14 +82,13 @@ describe("Contacts Component", () => {
 
     const { rerender } = render(<Contacts globalSearchTerm="Alice" />);
 
-    await waitFor(() =>
-      expect(screen.getByText("Alice Johnson")).toBeInTheDocument()
-    );
+    // Using findByText for dynamic filtering checks
+    expect(await screen.findByText("Alice Johnson")).toBeInTheDocument();
     expect(screen.queryByText("Bob Smith")).not.toBeInTheDocument();
 
     rerender(<Contacts globalSearchTerm="Bob" />);
+    expect(await screen.findByText("Bob Smith")).toBeInTheDocument();
     expect(screen.queryByText("Alice Johnson")).not.toBeInTheDocument();
-    expect(screen.getByText("Bob Smith")).toBeInTheDocument();
   });
 
   test("creates a new contact", async () => {
@@ -109,9 +106,8 @@ describe("Contacts Component", () => {
     });
     fireEvent.click(screen.getByText("Save Contact"));
 
-    await waitFor(() =>
-      expect(screen.getByText("Jane Doe")).toBeInTheDocument()
-    );
+    // Using findByText to wait for the new contact to appear
+    expect(await screen.findByText("Jane Doe")).toBeInTheDocument();
   });
 
   test("deletes a contact", async () => {
@@ -121,12 +117,11 @@ describe("Contacts Component", () => {
     mockSupabase.delete.mockResolvedValueOnce({});
 
     render(<Contacts globalSearchTerm="" />);
-    await waitFor(() => screen.getByText("John Doe"));
+    await screen.findByText("John Doe");  // Wait for John Doe to appear
 
     fireEvent.click(screen.getByText("Delete"));
-    await waitFor(() =>
-      expect(screen.queryByText("John Doe")).not.toBeInTheDocument()
-    );
+    await screen.findByText("John Doe"); // Wait for deletion
+    expect(screen.queryByText("John Doe")).not.toBeInTheDocument();
   });
 
   test("handles profile picture click in edit mode", async () => {
@@ -142,7 +137,7 @@ describe("Contacts Component", () => {
     });
 
     render(<Contacts globalSearchTerm="" />);
-    await waitFor(() => screen.getByText("Jane Doe"));
+    await screen.findByText("Jane Doe"); // Wait for Jane Doe to appear
 
     fireEvent.click(screen.getByText("Edit"));
     fireEvent.click(screen.getByAltText("Jane Doe"));
