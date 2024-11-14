@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.249">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-11-13T23:03:23" time="0.126" tests="1">
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.384">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-11-14T02:12:01" time="0.14" tests="1">
     <testcase classname=" 1 + 1 equals 2" name=" 1 + 1 equals 2" time="0.001">
     </testcase>
   </testsuite>
