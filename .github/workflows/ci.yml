@@ -3,14 +3,14 @@ name: CI
 on:
   push:
     branches:
-      - main # Adjust this based on your default branch
+      - main  # Adjust this based on your default branch
   pull_request:
     branches:
-      - main # Adjust this based on your default branch
+      - main  # Adjust this based on your default branch
 
 jobs:
   test:
-    runs-on: ubuntu-latest # Can also use 'windows-latest' or 'macos-latest'
+    runs-on: ubuntu-latest  # Can also use 'windows-latest' or 'macos-latest'
 
     steps:
       - name: Checkout code
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "23.x" # Adjust this to your Node.js version
+          node-version: '23.x'  # Adjust this to your Node.js version
 
       - name: Install dependencies
         run: npm install
@@ -29,9 +29,9 @@ jobs:
 
       - name: Upload coverage to Codecov
         if: ${{ !cancelled() }}
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: "./client/coverage/lcov.info" # Path to the correct lcov report
+          files: './client/coverage/lcov.info'  # Path to the lcov report
           flags: unittests
           fail_ci_if_error: true
